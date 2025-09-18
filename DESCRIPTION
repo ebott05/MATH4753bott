@@ -13,3 +13,5 @@ Description: This is a package for MATH 4753 with class and lab code.
 License: MIT
 Encoding: UTF-8
 LazyData: true
+URL: https://github.com/ebott05/MATH4753bott
+BugReports: https://github.com/ebott05/MATH4753bott/issues
