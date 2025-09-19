@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' my_notchplot(BHDiameter, spruce)
+#' my_notchplot(spruce, BHDiameter)
 my_notchplot <- function(data, var, xlab = NULL, main = NULL, col = "magenta") {
   var_name <- deparse(substitute(var))
   x <- data[[var_name]]
