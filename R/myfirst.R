@@ -1,6 +1,6 @@
 #' My First Function
 #'
-#' @param x
+#' @param x a vector
 #'
 #' @returns A list of components x and y with y being the square of x
 #' @export

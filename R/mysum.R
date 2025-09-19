@@ -1,6 +1,6 @@
 #' My Summary of X
 #'
-#' @param x
+#' @param x a vector
 #'
 #' @returns a summary of the vector x
 #' @export
