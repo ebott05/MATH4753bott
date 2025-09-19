@@ -7,7 +7,7 @@
 mysum(x)
 }
 \arguments{
-\item{x}{}
+\item{x}{a vector}
 }
 \value{
 a summary of the vector x

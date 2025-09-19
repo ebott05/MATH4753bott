@@ -7,7 +7,7 @@
 myfirstfunction(x)
 }
 \arguments{
-\item{x}{}
+\item{x}{a vector}
 }
 \value{
 A list of components x and y with y being the square of x
