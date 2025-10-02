@@ -1,0 +1,76 @@
+---
+title: "Birthday Probability"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Birthday_Probability}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MATH4753bott)
+```
+
+# What is the probability that two students share a birthday?
+## Below shows the proof of the probability that two or more students within this class of n students share a birthday.
+
+n will cover all of the students in the class. 
+First, we find a way to count all of the distinct possible birthdays with n students:
+
+$365, 365-1, ... (365-n)+1$
+
+This really assumes that all students don't have the same birthday. While that could be the case, this shows the permutation:
+
+${}^{365}P_n = n!*{}^{365}C_n$
+
+For no shared birthdays:
+
+$P(\bar{A})= {}^{365}P_n/365^n$
+
+$365^n$ represents if birthdays can be repeated, which they can in this case.
+
+Use logarithms and their properties to represent a large class size:
+
+$logP(\bar{A})= log{}^{365}P_n - nlog(365)$
+
+Plug in for ${}^{365}P_n$:
+
+$logP(\bar{A})= log(n!) - log choose(365,n) - nlog(365)$
+
+This is the probability that NO ONE shares a birthday but that's not what's being asked. To find the probability that two or more students share a birthday:
+
+$P(A)= 1 - P(\bar{A})$
+
+$P(A)= 1 - exp(log(P(\bar{A})))$
+
+$P(A)= 1 - exp(log(n!) - log choose(365,n) - nlog(365))$
+
+## Here is a reformulation using lfactorial and lchoose.
+This allows the number of students or a range of students in that class that could be chosen.
+
+$logP(\bar{A})= lfactorial(n) + lchoose(365,n) - nlog(365)$
+
+This is if no one shared a birthday.
+Here's if some individuals did share birthdays:
+
+$P(A)= 1 - exp(lfactorial(n) + lchoose(365,n) - nlog(365))$
+
+## Here is the body of the function:
+```{r}
+birthday <- function(x){
+  + 1 - exp(lchoose(365,x) + lfactorial(x) - x*log(365))
+}
+```
+n here is replaced with x.
+
+## Here is an example where n = 20:25
+```{r}
+birthday(20:25)
+```

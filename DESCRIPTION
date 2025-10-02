@@ -16,3 +16,7 @@ LazyData: true
 URL: https://github.com/ebott05/MATH4753bott
 BugReports: https://github.com/ebott05/MATH4753bott/issues
 RoxygenNote: 7.3.2
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
