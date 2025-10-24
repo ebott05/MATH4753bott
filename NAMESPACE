@@ -3,5 +3,6 @@
 export(birthday)
 export(my_notchplot)
 export(myfirstfunction)
+export(myncurve)
 export(mysum)
 export(sample_marbles)

@@ -11,7 +11,12 @@ sample_marbles(iter = 1, size = 5, white = 12, black = 8)
 
 \item{size}{#n}
 
-\item{black}{}
+\item{white}{#12 marbles}
+
+\item{black}{#8 marbles}
+}
+\value{
+#the iterations of that sample
 }
 \description{
 Marble sampling iterations
