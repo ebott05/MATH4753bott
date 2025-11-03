@@ -14,7 +14,7 @@ myncurve(mu, sigma, a)
 \item{a}{av vector}
 }
 \value{
-a list and plot given mu, sigma, and a and generates probabiliites off of a
+a list and plot given mu, sigma, and a and generates probabilites off of a
 }
 \description{
 Title
