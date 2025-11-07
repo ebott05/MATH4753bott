@@ -2,6 +2,7 @@
 
 export(birthday)
 export(my_notchplot)
+export(mycltb1)
 export(myfirstfunction)
 export(myncurve)
 export(mysum)
