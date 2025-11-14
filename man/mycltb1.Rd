@@ -2,7 +2,7 @@
 % Please edit documentation in R/mycltb.R
 \name{mycltb1}
 \alias{mycltb1}
-\title{Title}
+\title{CLT Binomial}
 \usage{
 mycltb1(n, iter, p = 0.5, ...)
 }
@@ -19,8 +19,8 @@ mycltb1(n, iter, p = 0.5, ...)
 a histogram of a binomial distribution with the density and theoretical
 }
 \description{
-Title
+CLT Binomial
 }
 \examples{
-\dontrun mycltb1(n= 10, iter= 10000, p= 0.7)
+\dontrun{mycltb1(n= 10, iter= 10000, p= 0.7)}
 }

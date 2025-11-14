@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' \dontrun mycltb1(n= 10, iter= 10000, p= 0.7)
+#' \dontrun{mycltb1(n= 10, iter= 10000, p= 0.7)}
 mycltb1=function(n,iter,p=0.5,...){
 
   ## r-random sample from the Binomial
