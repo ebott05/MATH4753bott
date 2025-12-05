@@ -1,9 +1,9 @@
 #' my_maxlikg
 #'
-#' @param lfun
-#' @param theta
+#' @param lfun a function selected, usually a logarithmic function
+#' @param theta an input of the mean/certain value
 #'
-#' @returns # a plot of the maximum likelihood of a joint binomial and Poisson density.
+#' @returns a plot of the maximum likelihood of a joint binomial and Poisson density.
 #' @export
 #'
 #' @examples
@@ -18,3 +18,4 @@ my_maxlikg=function(lfun="logbin2",theta) { # default log lik is a combination b
   axis(3,theta[zmax],round(theta[zmax],4))  # one tick on the third axis
   theta[zmax]   # theta corresponding to max lik
 }
+
