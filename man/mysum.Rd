@@ -16,5 +16,5 @@ a summary of the vector x
 My Summary of X
 }
 \examples{
-mysum(1:10)
+\dontrun{mysum(1:10)}
 }

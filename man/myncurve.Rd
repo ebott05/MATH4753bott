@@ -14,8 +14,11 @@ myncurve(mu, sigma, a)
 \item{a}{av vector}
 }
 \value{
-a list and plot given mu, sigma, and a and generates probabilites off of a
+a list and plot given mu, sigma, and a and generates probabilities off of a
 }
 \description{
 Title
+}
+\examples{
+\dontrun{myncurve(2, 4, 0.5)}
 }

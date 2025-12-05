@@ -5,10 +5,11 @@
 #' @param sigma a vector
 #' @param a av vector
 #'
-#' @returns a list and plot given mu, sigma, and a and generates probabilites off of a
+#' @returns a list and plot given mu, sigma, and a and generates probabilities off of a
 #' @export
 #'
 #' @examples
+#' \dontrun{myncurve(2, 4, 0.5)}
 myncurve = function(mu, sigma, a) {
   # Plot the curve
   curve(dnorm(x, mean=mu, sd=sigma), xlim = c(mu - 3*sigma, mu + 3*sigma), col= "purple"

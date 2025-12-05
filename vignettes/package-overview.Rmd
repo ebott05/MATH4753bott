@@ -1,0 +1,85 @@
+---
+title: "Package Overview: MATH4753bott"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{package-overview}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MATH4753bott)
+```
+
+# MATH4753bott Package Overview
+## Functions
+There are a total of 9 functions in this package and they are as follows:
+
+### myfirstfunction
+```{r}
+myfirstfunction(1:10)
+```
+
+### ntickets
+```{r}
+ntickets(N= 400, p = 0.95, gamma = 0.02)
+```
+
+### mysum
+```{r}
+mysum(1:10)
+```
+
+### my_notchplot
+```{r}
+my_notchplot(fire, DAMAGE)
+```
+
+### myncurve
+```{r}
+myncurve(2, 4, 0.5)
+```
+
+### mycltb1
+```{r}
+mycltb1(n= 10, iter= 10000, p= 0.7)
+```
+
+### myboot2
+```{r}
+sam <- rnorm(25, mean = 6, sd = 0.5)
+
+myboot2(iter= 10000, x= sam, fun= mean, alpha= 0.05)
+```
+
+### sample_marbles
+```{r}
+sample_marbles(iter=4)
+```
+
+### birthday
+```{r}
+birthday(20:24)
+```
+
+These functions were used through various labs and assignments.
+
+## Data sets
+There is only one data set in this package and that is "fire". "fire" was loaded in as FIREDAM.csv and edited to fit into my package.
+```{r}
+fire
+```
+
+## Challenges
+I would like to point out several challenges I had throughout this whole package making process. 
+
+It took me quite a while to figure out why I kept getting an error when I would check this. It was having a problem with this being attached to my OneDrive. I tried several times to get this off and eventually I figured it out.
+
+I think I'm on version two or three of this package because in my process of moving this around so I would stop getting this error, the package would delete itself. GitHub definitely pulled through and was the only thing that saved me from having to do everything all over again.

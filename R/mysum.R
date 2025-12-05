@@ -6,7 +6,7 @@
 #' @export
 #'
 #' @examples
-#' mysum(1:10)
+#' \dontrun{mysum(1:10)}
 mysum <- function(x) {
   summary(x)
 }

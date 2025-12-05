@@ -24,5 +24,5 @@ a notched boxplot
 Notched Boxplot
 }
 \examples{
-my_notchplot(spruce, BHDiameter)
+\dontrun{my_notchplot(spruce, BHDiameter)}
 }
